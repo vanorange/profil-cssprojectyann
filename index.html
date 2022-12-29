@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Profil Web</title>
+    <style>
+.parallax{
+    background-image: url('asset/img/2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">YaNN</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="#jasa">JASA</a></li>
+                <li><a href="https://www.instagram.com/ehthian">CONTACT</a></li>
+
+            </ul>
+        </nav>
+        <button class="btn-cta" onclick="redirInstagram()">Follow Me</button>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <p style="color:rgb(140, 34, 226);" class="tittle">Hello, Yann Here!</p>
+            <p style="color:rgb(49, 189, 189);" class="description">Front-End Web Developer</p>
+            <img class="img-photo" src="asset/img/1.jpeg" alt="yann photo">
+        </div>
+    </div>
+    <div class="parallax">
+        <div class="tentang">
+                <p class="tittle">Saya Adalah Programmer</p>
+                <p class="description">Belajar aja dulu jagonya nyusul</p>
+            <div class="mt-10">
+                <button class="btn-cta" onclick="redirWhatsapp()">Mari Kerjasama</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card animate__animated animate__fadeInUp" id="jasa">
+                <div class="card-items">
+                    <img src="asset/icon/24-hours.png" alt="icon" class="icon">
+                    <p class="card-tittle">Siap Sedia</p>
+                    <p class="card-description">Selalu siap untuk menerima orderan aplikasi
+                    </p>
+                </div>
+                <div class="card-items">
+                    <img src="asset/icon/hot-deal.png" alt="" class="icon">
+                    <p class="card-tittle">Programer Terjangkau</p>
+                    <p class="card-description">Jasa Paling oke dan harga yang sangat terjangkau</p>
+                </div>
+                <div class="card-items">
+                    <img src="asset/icon/rating.png" alt="" class="icon">
+                    <p class="card-tittle">1265 Review</p>
+                    <p class="card-description">Kustomer sangat puas dengan pelayanan yang ada</p>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <footer>
+        <p>&copy; M.Thian Andriansyah 2022</p>
+    </footer>
+    <script>
+        function redirInstagram(){
+            window.location.href = "https://www.instagram.com/ehthian"
+        }
+        function redirWhatsapp(){
+            window.location.href = "https://wa.me/+6285157441787"
+        }
+    </script>
+</body>
+</html> 
